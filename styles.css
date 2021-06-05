@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* background-color: #124263; */
+    padding: 10px 0px;
+}
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container h2 {
+    font-weight: normal;
+    color: #555;
+}
+
+.container h2 span {
+    font-weight: bolder;
+    color: #bb1111;
+}
+
+ul li {
+    display: inline;
+    margin: 0px 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    color: #bb1111;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.one {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.one img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.one .text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.one .text h2 {
+    color: #bb1111  ;
+}
+
+.one .text p {
+    margin: 5px 0px;
+    color: #333;
+}
+
+.one .text button {
+    width: 115px;
+    height: 30px;
+    color: #bb1111;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid #bb1111;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.one .text button:hover {
+    background-color: #bb1111;
+    color: white;
+}
+
+.two {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #bb1111;
+    color: white;
+    text-align: center;
+}
+
+.two h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.skill {
+    width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skill-1:hover {
+    background-color: #4B8BBE;
+}
+.skill-2:hover {
+    background-color: orange;
+}
+.skill-3:hover {
+    background-color: seagreen;
+}
+.skill-4:hover {
+    background-color: darkturquoise;
+}
+.skill-5:hover {
+    background-color: orangered;
+}
+.skill-6:hover {
+    background-color: gray;
+}
+
+
+.three {
+    margin-top: 30px;
+    padding: 20px;
+    color: #bb1111;
+    text-align: center;
+    border: 10px solid #bb1111;
+}
+.three h2 {
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.college-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.college-logo img {
+    width: 40px;
+    margin: 0 5px 0 0;
+}
+.college-name {
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 120%;
+}
+.college-name p {
+    color: #333;
+}
+
+.four {
+    margin-top: 60px;
+}
+.four h2 {
+    text-decoration: underline;
+    text-align: center;
+    color: #bb1111;
+    margin-bottom: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lang {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.l2, .l4 {
+    flex-direction: row-reverse;
+}
+
+.four .content {
+    width: 400px;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+}
+.four  img {
+    width: 100px;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin-top: 100px;
+    height: 60px;
+    background-color: #111;
+    color: white;
+}
+
+.footer {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    color: white;
+}
+
+i {
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+.fa-instagram:hover {
+    color: deeppink;
+}
+
+hr {
+    margin: auto;
+}
+
+
+/** Media Queries **/
+
+
+@media only screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        font-size: 80%;
+    }
+    .container .logo {
+        font-size: 110%;
+    }
+    .banner {
+        margin-bottom: 10px;
+    }
+    .footer {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    .container {
+        justify-content: center;
+    }
+    .text {
+        text-align: center;
+    }
+    .college-name {
+        font-size: 80%;
+    }
+}
