@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First HTML Assignment</title>
+	<style type="text/css">
+		* {
+			/*margin: 0;
+			padding: 0;*/
+		}
+		.one {
+			background-image: url("image.jpg");
+			padding: 20px;
+		}
+		.one h1 {
+			color: white;
+		}
+		h1 {
+			text-align: center;
+			font-family: sans-serif;
+			margin-bottom: 5px;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+			font-size: 12px;
+		}
+		table {
+			border: 2px solid black;
+			font-family: sans-serif;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 10px 3px;
+		}
+		.one table {
+			border-color: white;
+		}
+		.one th, .one td {
+			border: none;
+		}
+
+		th {
+			background-color: dodgerblue;
+			color: white;
+		}
+		td {
+			background-color: gold;
+			text-align: center;
+		}
+		.leave {
+			background-color: firebrick;
+			color: white;
+		}
+		.friday {
+			background-color: green;
+			color: white;
+		}
+		.sunday {
+			background-color: red;
+			color: white;
+		}
+
+		.two {
+			margin: 50px 0px;
+			text-align: center;
+		}
+		.two hr {
+			margin: auto;
+			width: 50%;
+		}
+		.two p {
+			margin: 0px 0px 20px 0px;
+		}
+		.two h3 {
+			margin-bottom: 0px;
+		}
+
+		#cspan, #rspan {
+			background-color: orangered;
+		}
+
+		.container-two {
+			display: flex;
+			justify-content: center;
+			margin-top: 5px; 
+		}
+		.outer-most {
+			width: 60%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			margin: auto;
+			margin-top: 10px;
+			padding: 15px 0px;
+			border: 2px dashed black;
+		}
+		h3 {
+			font-family: sans-serif;
+		}
+		.h3 {
+			width: 25%;
+		}
+		.h3 p {
+			text-align: justify;
+		}
+		.three h3 {
+			color: blue;
+		}
+		.span {
+			width: 55%;
+			margin: auto;
+			padding: 20px;
+			background-color: orangered;
+			color: white;
+		}
+		#rowspan {
+			margin-top: 10px;
+		}
+		h4 {
+			font-family: sans-serif;
+		}
+		legend {
+			text-align: center;
+
+		}
+		.four h3 {
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<section class="one">
+	<h1>1 : TIME TABLE</h1>
+	<div class="container">
+		<table>
+			<tr class="table-header">
+				<th>Time/Day</th>
+				<th>09:20 to 10:10</th>
+				<th>10:10 to 11:00</th>
+				<th>11:00 to 11:50</th>
+				<th>11:50 to 12:40</th>
+				<th>12:40 to 01:30</th>
+			</tr>
+			<tr>
+				<td class="week-day">Monday</td>
+				<td>PDE & ODE</td>
+				<td>Numerical Methods</td>
+				<td>Group Theory</td>
+				<td>Information Security</td>
+				<td>LaTeX & Web Dev</td>
+			</tr>
+			<tr>
+				<td class="week-day">Tuesday</td>
+				<td>PDE & ODE</td>
+				<td>Numerical Methods</td>
+				<td>Group Theory</td>
+				<td>Information Security</td>
+				<td>LaTeX & Web Dev</td>
+			</tr>
+			<tr>
+				<td class="week-day">Wednesday</td>
+				<td>PDE & ODE</td>
+				<td>Numerical Methods</td>
+				<td>Group Theory</td>
+				<td>Information Security</td>
+				<td>LaTeX & Web Dev</td>
+			</tr>
+			<tr>
+				<td class="week-day">Thursday</td>
+				<td>PDE & ODE</td>
+				<td>Numerical Methods</td>
+				<td>Group Theory</td>
+				<td>Information Security</td>
+				<td>LaTeX & Web Dev</td>
+			</tr>
+			<tr>
+				<td class="friday">Friday</td>
+				<td colspan="5" class="leave">LEAVE</td>
+			</tr>
+			<tr>
+				<td class="week-day">Saturday</td>
+				<td colspan="5" class="leave">LEAVE</td>
+			</tr>
+			<tr>
+				<td class="sunday">Sunday</td>
+				<td colspan="5" class="leave">LEAVE</td>
+			</tr>
+		</table>
+	</div>
+	</section>
+	<hr>
+	<section class="two">
+		<h1>2 : COLSPAN & ROWSPAN (WITH EXAMPLES)</h1>
+		<div class="span">
+		<h3>COLSPAN</h3>
+		<p>It specifies how many columns a cell should span.</p>
+		<hr>
+		<h3 id="rowspan">ROWSPAN</h3>
+		<p>It specifies how many rows a cell should span.</p>			
+		</div>
+
+		<div class="outer-most">
+		<div class="container-two">
+		<table>
+			<caption>Example of ColSpan</caption>
+			<tr> 
+				<th colspan="2" id="cspan">Name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Bilal</td>
+				<td>Khan</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>Vishal</td>
+				<td>Singh</td>
+				<td>32</td>
+			</tr>
+		</table>
+	</div>
+		<div class="container-two">
+		<table>
+			<caption>Example of RowSpan</caption>
+			<tr>
+				<th>Item</th>
+				<th>Price</th>
+				<th rowspan="3" id="rspan">Sold</th>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td>10K</td>
+			</tr>
+			<tr>
+				<td>TV</td>
+				<td>20K</td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	</section>
+	<hr>
+	<section class="three">
+		<h1>3 : LISTS</h1>
+		<fieldset>
+		<legend><h3>ORDERED LIST</h3></legend>
+		<fieldset>
+		<legend><h4>Type (Default)</h4></legend>
+		<ol>
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ol>
+		</fieldset>
+		<fieldset>
+		<legend><h4>Type (a)</h4></legend>
+		<ol type="a">
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ol>
+	</fieldset>
+		<fieldset>
+		<legend><h4>Type (A)</h4></legend>
+		<ol type="A">
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ol>
+		</fieldset>
+		<fieldset>
+		<legend><h4>Type (i)</h4></legend>
+		<ol type="i">
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ol>
+	</fieldset>
+		<fieldset>
+		<legend><h4>Type (I)</h4></legend>
+		<ol type="I">
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ol>
+	</fieldset>
+		</fieldset>
+		<fieldset>
+		<legend><h3>UNORDERED LIST</h3></legend>
+		<fieldset>
+			<legend><h4>Type (Default)</h4></legend>
+		<ul>
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend><h4>Type (Square)</h4></legend>
+		<ul style="list-style-type: square">
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend><h4>Type (Circle)</h4></legend>
+		<ul style="list-style-type: circle;">
+			<li>First Element</li>
+			<li>Second Element</li>
+			<li>Third Element</li>
+		</ul>
+	</fieldset>
+	</fieldset>
+	<fieldset>
+		<legend><h3>NESTED LIST</h3></legend>
+		<ul>
+			<li>First Element</li>
+			<li>
+				Second Element
+				<ul>
+					<li>Fisrt Element of Second Element
+						<ul>
+							<li>First Element of First Element of Second Element</li>
+							<li>Second Element of First Element of Second Element</li>
+						</ul>
+					</li>
+					<li>Second Element of Second Element</li>
+				</ul>
+			</li>
+			<li>Third Element</li>
+		</ul>
+	</fieldset>
+	</section>
+	<hr>
+	<section class="four">
+		<h1>4 : FRAMES</h1>
+		<h3>(<a href="frames.html">Click here</a>)</h3>
+	</section>
+</body>
+</html>
